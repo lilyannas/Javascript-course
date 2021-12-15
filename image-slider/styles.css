@@ -2,8 +2,9 @@ body {
   background-color: rgb(58, 58, 58);
   margin-top: 100px;
 }
+
 .carousel-container {
-  width: 600px;
+  width: 900px;
   height: 400px;
   position: relative;
   margin: 0 auto;
@@ -17,7 +18,6 @@ body {
 .carousel img {
   width: 100%;
   transition: all 0.3s ease;
-  border:8px solid white;
 }
 
 .item {
@@ -27,15 +27,16 @@ body {
 
 .caption {
   position: absolute;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   bottom: 0;
-  width: 103%;
+  width: 100%;
   display: flex;
   font-size: 20px;
   justify-content: center;
   align-items: center;
   color: rgb(255, 255, 255);
   background: rgba(0, 0, 0, 0.3);
-  height: 35px;
+  height: 50px;
 }
 
 .main {
