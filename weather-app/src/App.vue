@@ -28,7 +28,7 @@
 
 <script>
 
-let weatherAPI = 'fe412c491c7b80ec2c62af05b01e2511';
+let weatherAPI = "YOUR_API_KEY_HERE";
 
 export default {
   name: 'app',
