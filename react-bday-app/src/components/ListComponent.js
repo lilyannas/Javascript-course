@@ -4,7 +4,7 @@ let currentYear = date.getFullYear();
 function ListComponent({ data, setMonthValue, setBdays }) {
   if(setMonthValue) {
     return (
-      <>
+      <main>
         {data
           .filter((person) => {
             return person.month == setMonthValue;
@@ -13,15 +13,15 @@ function ListComponent({ data, setMonthValue, setBdays }) {
             setBdays(array.length);
             console.log('from the list component');
             return (
-              <>
-              <div>{person.name}</div>
+              <section className="person-container">
+              <div>{person.name} is turning:</div>
               <div>{currentYear - person.age}</div>
               <img src={person.image} width="200" />
-              {person.email ? <a href="">Send greetigns</a> : ""}
-              </>
+              {person.email ? <button href={`mailto:${person.email}`}>Send greetigns</button> : ""}
+              </section>
             )
           })}
-      </>
+      </main>
     );
   }
 }

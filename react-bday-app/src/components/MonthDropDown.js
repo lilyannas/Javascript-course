@@ -18,7 +18,7 @@ function MonthDropDown({ setMonth, setBdays }) {
   console.log("from the drowdown component");
   return (
     <section>
-      <label>Select bday month</label>
+      <label>Select birthday month</label>
       <select onChange={(event) => setMonth(event.target.value)}>
         {months.map((monthItem, index) => {
           return (
